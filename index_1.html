@@ -1,0 +1,1764 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>S&amp;S Window Washing — Berkeley, Albany &amp; El Cerrito</title>
+<meta name="description" content="Residential and storefront window washing across Berkeley, Albany, El Cerrito and the East Bay. Screens, tracks and sills included. Get an instant quote in two minutes.">
+<meta name="theme-color" content="#EBF2F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#06141D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='4' fill='%23123A50'/%3E%3Cg stroke='%23EAF4FA' stroke-width='2.2' fill='none'%3E%3Crect x='5' y='5' width='18' height='18' rx='1.6'/%3E%3Cpath d='M14 5v18M5 14h18'/%3E%3C/g%3E%3Cpath d='M7.5 11.5 11.5 7.5' stroke='%23F5A623' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- ====== EDIT THIS URL once you know your GitHub Pages address ====== -->
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/sswindowwashing/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="S&amp;S Window Washing — East Bay">
+<meta property="og:description" content="Windows so clean the fog looks fake. Instant quotes for Berkeley, Albany, El Cerrito and the rest of the East Bay.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/sswindowwashing/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+
+<!-- Google finds your business through this block. Fill in the real
+     values (phone, street, hours, price range) before you go live. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "additionalType": "https://schema.org/LocalBusiness",
+  "name": "S&S Window Washing",
+  "description": "Residential and storefront window washing in the East Bay.",
+  "telephone": "+1-510-555-0147",
+  "email": "hello@sswindowwashing.com",
+  "url": "https://YOUR-USERNAME.github.io/sswindowwashing/",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Berkeley",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Berkeley, CA", "Albany, CA", "El Cerrito, CA", "Kensington, CA",
+    "Richmond, CA", "Emeryville, CA", "Oakland, CA", "Piedmont, CA"
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }]
+}
+</script>
+
+<style>
+  /* base reset */
+  :root{
+    color-scheme: light dark;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html{ -webkit-text-size-adjust:100%; }
+  body{ margin:0; }
+  img{ max-width:100%; }
+  [hidden]{ display:none !important; }
+</style>
+</head>
+<body>
+
+<style>
+/* ============================================================
+   SIGHTLINE — tokens
+   light = daylight through clean glass
+   dark  = night glass, lit from inside
+   ============================================================ */
+:root{
+  --ground:#EBF2F6;
+  --ground-2:#DCE8EF;
+  --pane:#FFFFFF;
+  --pane-2:#F5FAFC;
+  --ink:#0E2C3E;
+  --ink-2:#496B7D;
+  --ink-3:#7B96A5;
+  --line:#D2E1E9;
+  --line-2:#B2CAD8;
+  --frame:#123A50;
+  --sky:#0E86CE;
+  --sky-2:#0A6199;
+  --sky-wash:#E1F0FA;
+  --mint:#3FC9B2;
+  --sun:#F5A623;
+  --sun-wash:#FDF0D8;
+  --shadow-1:0 1px 2px rgba(14,44,62,.07);
+  --shadow-2:0 2px 4px rgba(14,44,62,.05), 0 14px 32px -18px rgba(14,44,62,.45);
+  --shadow-3:0 30px 70px -40px rgba(10,50,72,.75);
+  --glass:rgba(255,255,255,.78);
+  --sash-1:rgba(255,255,255,.9);
+  --sash-2:rgba(221,237,246,.84);
+  --sash-edge:rgba(255,255,255,.6);
+  --sash-shadow:rgba(255,255,255,.6);
+  --r-sash:4px;
+  --r-card:8px;
+  --r-pill:999px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#06141D;
+    --ground-2:#0A1F2C;
+    --pane:#0C2434;
+    --pane-2:#102C3E;
+    --ink:#E8F4FA;
+    --ink-2:#A2BECE;
+    --ink-3:#6F8EA0;
+    --line:#1B3B4F;
+    --line-2:#2B5771;
+    --frame:#071620;
+    --sky:#48B6F2;
+    --sky-2:#8AD5FF;
+    --sky-wash:#0F2D40;
+    --mint:#63E0C7;
+    --sun:#FFC152;
+    --sun-wash:#2A2213;
+    --shadow-1:0 1px 2px rgba(0,0,0,.4);
+    --shadow-2:0 2px 4px rgba(0,0,0,.3), 0 14px 32px -18px rgba(0,0,0,.9);
+    --shadow-3:0 30px 70px -40px rgba(0,0,0,1);
+    --glass:rgba(12,36,52,.78);
+    --sash-1:rgba(34,70,94,.93);
+    --sash-2:rgba(18,46,64,.9);
+    --sash-edge:rgba(140,190,215,.3);
+    --sash-shadow:rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#06141D;
+  --ground-2:#0A1F2C;
+  --pane:#0C2434;
+  --pane-2:#102C3E;
+  --ink:#E8F4FA;
+  --ink-2:#A2BECE;
+  --ink-3:#6F8EA0;
+  --line:#1B3B4F;
+  --line-2:#2B5771;
+  --frame:#071620;
+  --sky:#48B6F2;
+  --sky-2:#8AD5FF;
+  --sky-wash:#0F2D40;
+  --mint:#63E0C7;
+  --sun:#FFC152;
+  --sun-wash:#2A2213;
+  --shadow-1:0 1px 2px rgba(0,0,0,.4);
+  --shadow-2:0 2px 4px rgba(0,0,0,.3), 0 14px 32px -18px rgba(0,0,0,.9);
+  --shadow-3:0 30px 70px -40px rgba(0,0,0,1);
+  --glass:rgba(12,36,52,.78);
+  --sash-1:rgba(34,70,94,.93);
+  --sash-2:rgba(18,46,64,.9);
+  --sash-edge:rgba(140,190,215,.3);
+  --sash-shadow:rgba(0,0,0,.45);
+}
+
+/* ---------- base ---------- */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{
+  font-family:"Bricolage Grotesque","Instrument Sans",Helvetica,Arial,sans-serif;
+  font-weight:800;
+  line-height:1.02;
+  letter-spacing:-.025em;
+  margin:0;
+  text-wrap:balance;
+}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:2.5px solid var(--sun);outline-offset:3px;border-radius:2px}
+
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-inline:20px}
+.mono{font-family:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+/* eyebrow: a sash label */
+.eyebrow{
+  font-family:"DM Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 14px;display:flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--line-2);flex:none}
+
+.sec{padding-block:clamp(56px,8vw,104px);position:relative}
+.sec + .sec{border-top:1px solid var(--line)}
+.sec-head{max-width:62ch;margin-bottom:clamp(28px,4vw,44px)}
+.sec-head h2{font-size:clamp(28px,4.4vw,46px)}
+.sec-head p{color:var(--ink-2);margin-top:14px;font-size:clamp(15px,1.6vw,18px);max-width:58ch}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:15px;
+  padding:13px 22px;border-radius:var(--r-pill);border:1px solid transparent;
+  text-decoration:none;cursor:pointer;white-space:nowrap;
+  transition:transform .18s cubic-bezier(.22,1,.36,1), box-shadow .18s, background .18s, border-color .18s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-sun{background:var(--sun);color:#20160A;box-shadow:0 4px 0 rgba(0,0,0,.14), var(--shadow-1)}
+.btn-sun:hover{box-shadow:0 7px 18px -6px rgba(245,166,35,.75), 0 4px 0 rgba(0,0,0,.14)}
+.btn-sky{background:var(--sky);color:#fff}
+.btn-sky:hover{background:var(--sky-2)}
+.btn-ghost{background:transparent;border-color:var(--line-2);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--sky);color:var(--sky)}
+.btn-sm{padding:9px 16px;font-size:14px}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:70;
+  background:var(--glass);backdrop-filter:blur(14px) saturate(160%);
+  -webkit-backdrop-filter:blur(14px) saturate(160%);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:600;flex:none}
+.brand-mark{width:26px;height:26px;flex:none}
+.brand-name{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.03em;font-size:18px;white-space:nowrap}
+@media (max-width:600px){.nav .brand-rest{display:none}}
+.nav-links{display:flex;gap:26px;margin-left:auto;align-items:center}
+.nav-links a{
+  text-decoration:none;font-size:14.5px;color:var(--ink-2);font-weight:500;
+  padding-bottom:3px;border-bottom:1.5px solid transparent;transition:color .15s,border-color .15s;
+}
+.nav-links a:hover{color:var(--ink);border-color:var(--sky)}
+.nav-cta{display:flex;gap:10px;align-items:center;flex:none}
+.nav-phone{
+  font-family:"DM Mono",monospace;font-size:14px;text-decoration:none;color:var(--ink);
+  border-bottom:1.5px solid var(--sun);padding-bottom:2px;
+}
+@media (max-width:960px){.nav-links{display:none}}
+@media (max-width:520px){.nav-phone{display:none}}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative;overflow:hidden;padding-block:clamp(44px,6vw,80px) clamp(56px,7vw,92px)}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(900px 520px at 78% -8%, var(--sky-wash) 0%, transparent 62%),
+    radial-gradient(600px 400px at 6% 104%, var(--sky-wash) 0%, transparent 60%);
+  opacity:.9;
+}
+.hero-grid{
+  position:relative;display:grid;grid-template-columns:1.02fr .98fr;
+  gap:clamp(30px,4vw,56px);align-items:center;
+}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;gap:38px}}
+
+.hero h1{font-size:clamp(36px,5.9vw,66px);letter-spacing:-.035em}
+.hero h1 .lit{
+  color:var(--sky);position:relative;display:inline-block;
+}
+.hero-sub{margin-top:20px;font-size:clamp(16px,1.9vw,19.5px);color:var(--ink-2);max-width:46ch;line-height:1.55}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12.5px;color:var(--ink-2);background:var(--pane);
+  border:1px solid var(--line);border-radius:var(--r-pill);padding:6px 13px 6px 9px;
+  box-shadow:var(--shadow-1);
+}
+.chip svg{flex:none;color:var(--mint)}
+
+/* ============================================================
+   THE AWNING SASH — hover to open
+   ============================================================ */
+.awning-stage{
+  position:relative;
+  perspective:1500px;
+  perspective-origin:50% 12%;
+  padding:6px;
+}
+.awning{
+  position:relative;
+  border:10px solid var(--frame);
+  border-bottom-width:14px;
+  border-radius:var(--r-sash);
+  background:linear-gradient(170deg, var(--sky-wash), var(--pane-2));
+  box-shadow:var(--shadow-3), inset 0 0 0 1px rgba(255,255,255,.14);
+  min-height:clamp(392px,44vw,504px);
+  display:grid;
+  cursor:pointer;
+  transform-style:preserve-3d;
+}
+/* the offer, sitting behind the glass */
+.reveal{
+  grid-area:1/1;position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:38px 26px 30px;gap:14px;
+}
+.reveal-eyebrow{
+  font-family:"DM Mono",monospace;font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--sky-2);
+}
+.reveal h3{
+  font-size:clamp(25px,3.3vw,36px);line-height:1.04;max-width:13ch;letter-spacing:-.03em;
+}
+.reveal p{font-size:13.5px;color:var(--ink-2);max-width:30ch}
+.reveal .btn{margin-top:4px}
+/* sun spill once it's open */
+.awning::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;border-radius:2px;
+  background:radial-gradient(120% 78% at 50% -6%, rgba(245,166,35,.34), transparent 62%);
+  opacity:0;transition:opacity .7s ease .12s;
+}
+.awning.is-open::after{opacity:1}
+
+/* the sash itself */
+.sash{
+  grid-area:1/1;position:relative;z-index:5;
+  transform-origin:top center;
+  transform:rotateX(0deg);
+  transition:transform .9s cubic-bezier(.19,1,.22,1), box-shadow .9s;
+  background:linear-gradient(168deg, var(--sash-1), var(--sash-2) 54%, var(--sash-1));
+  backdrop-filter:blur(10px) saturate(.5);
+  -webkit-backdrop-filter:blur(10px) saturate(.5);
+  box-shadow:inset 0 0 0 1px var(--sash-edge);
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  will-change:transform;
+}
+.awning.is-open .sash{
+  transform:rotateX(-74deg);
+  box-shadow:inset 0 0 0 1px var(--sash-edge), 0 34px 40px -26px rgba(8,30,44,.8);
+}
+/* grime + water spots on the closed pane */
+.sash::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(7px 5px at 18% 24%, rgba(160,186,200,.5), transparent 70%),
+    radial-gradient(4px 4px at 27% 61%, rgba(160,186,200,.45), transparent 70%),
+    radial-gradient(9px 7px at 71% 33%, rgba(160,186,200,.4), transparent 70%),
+    radial-gradient(5px 5px at 82% 72%, rgba(160,186,200,.45), transparent 70%),
+    radial-gradient(6px 4px at 44% 84%, rgba(160,186,200,.35), transparent 70%),
+    linear-gradient(104deg, transparent 20%, rgba(255,255,255,.5) 24%, transparent 27%),
+    linear-gradient(104deg, transparent 58%, rgba(255,255,255,.4) 61%, transparent 65%);
+  opacity:.9;transition:opacity .5s;
+}
+.awning.is-open .sash::before{opacity:0}
+/* mullions: a 2x2 divided lite */
+.lites{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;pointer-events:none}
+.lites span{border:0 solid var(--frame);opacity:.85}
+.lites span:nth-child(1){border-right-width:5px;border-bottom-width:5px}
+.lites span:nth-child(2){border-bottom-width:5px}
+.lites span:nth-child(3){border-right-width:5px}
+/* moving glint */
+.glint{
+  position:absolute;top:-60%;left:-40%;width:42%;height:220%;pointer-events:none;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.72), transparent);
+  transform:rotate(18deg);
+  animation:sweep 6.5s ease-in-out infinite;
+}
+@keyframes sweep{
+  0%,62%{left:-45%}
+  86%,100%{left:118%}
+}
+/* the "hover to open" prompt + handle */
+.sash-prompt{
+  margin-top:auto;position:relative;z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  padding:0 20px 24px;text-align:center;
+}
+.sash-hint{
+  font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--ink-2);display:flex;align-items:center;gap:8px;
+}
+.sash-hint .arw{display:inline-block;animation:nudge 1.9s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.handle{
+  width:56px;height:11px;border-radius:var(--r-pill);
+  background:linear-gradient(180deg,#E9F1F6,#9FB6C3);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset, 0 2px 5px rgba(14,44,62,.35);
+  border:1px solid rgba(14,44,62,.22);
+}
+.sash-title{
+  position:relative;z-index:3;padding:30px 26px 0;text-align:center;
+  font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.03em;
+  font-size:clamp(21px,2.6vw,28px);line-height:1.08;color:var(--ink);
+  text-shadow:0 1px 0 var(--sash-shadow);
+}
+.sash-sub{
+  position:relative;z-index:3;text-align:center;padding:10px 30px 0;
+  font-size:13.5px;color:var(--ink-2);
+}
+/* sill shadow under the open sash */
+.sill{
+  position:absolute;left:12px;right:12px;top:14px;height:26px;z-index:4;pointer-events:none;
+  background:linear-gradient(180deg, rgba(8,30,44,.28), transparent);
+  opacity:0;transition:opacity .75s ease;
+}
+.awning.is-open .sill{opacity:1}
+
+/* bubbles */
+.bubbles{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.bub{
+  position:absolute;bottom:-40px;border-radius:50%;
+  background:radial-gradient(circle at 32% 30%, rgba(255,255,255,.95), rgba(190,225,245,.35) 46%, rgba(120,190,225,.12) 70%);
+  box-shadow:inset 0 0 8px rgba(255,255,255,.7);
+  animation:rise linear infinite;
+}
+@keyframes rise{
+  0%{transform:translateY(0) translateX(0);opacity:0}
+  12%{opacity:.85}
+  75%{opacity:.7}
+  100%{transform:translateY(-110vh) translateX(28px);opacity:0}
+}
+
+/* ============================================================
+   generic panels / cards
+   ============================================================ */
+.panel{
+  background:var(--pane);border:1px solid var(--line);border-radius:var(--r-card);
+  box-shadow:var(--shadow-1);
+}
+.grid-svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
+@media (max-width:860px){.grid-svc{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid-svc{grid-template-columns:1fr}}
+.svc{background:var(--pane);padding:26px 24px 28px;display:flex;flex-direction:column;gap:11px;transition:background .2s}
+.svc:hover{background:var(--pane-2)}
+.svc-ico{width:30px;height:30px;color:var(--sky)}
+.svc h3{font-size:18.5px;letter-spacing:-.02em}
+.svc p{font-size:14.5px;color:var(--ink-2);line-height:1.55}
+.svc .tag{
+  margin-top:auto;padding-top:12px;font-family:"DM Mono",monospace;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+}
+
+/* steps — a real sequence, so numbered */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,32px);counter-reset:s}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.step{padding-top:20px;border-top:2px solid var(--frame);counter-increment:s}
+.step::before{
+  content:counter(s,decimal-leading-zero);
+  font-family:"DM Mono",monospace;font-size:12px;color:var(--sky);letter-spacing:.1em;
+  display:block;margin-bottom:10px;
+}
+.step h3{font-size:20px;margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--ink-2)}
+.step .when{
+  display:inline-block;margin-top:12px;font-family:"DM Mono",monospace;font-size:11.5px;
+  background:var(--sky-wash);color:var(--sky-2);padding:3px 10px;border-radius:var(--r-pill);
+}
+
+/* ============================================================
+   before / after squeegee slider
+   ============================================================ */
+.ba{
+  position:relative;border:12px solid var(--frame);border-bottom-width:18px;border-radius:var(--r-sash);
+  overflow:hidden;box-shadow:var(--shadow-2);aspect-ratio:16/9;max-width:100%;
+  background:#BFD9E8;touch-action:pan-y;
+}
+@media (max-width:600px){.ba{aspect-ratio:4/3;border-width:8px;border-bottom-width:12px}}
+.ba-layer{position:absolute;inset:0}
+.ba-dirty{filter:saturate(.45) contrast(.86) brightness(.9)}
+.ba-dirty::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(12px 9px at 22% 30%, rgba(150,145,120,.5), transparent 70%),
+    radial-gradient(8px 8px at 35% 68%, rgba(150,145,120,.45), transparent 70%),
+    radial-gradient(15px 11px at 63% 22%, rgba(150,145,120,.42), transparent 70%),
+    radial-gradient(9px 9px at 78% 60%, rgba(150,145,120,.48), transparent 70%),
+    radial-gradient(11px 8px at 47% 84%, rgba(150,145,120,.4), transparent 70%),
+    radial-gradient(7px 7px at 88% 38%, rgba(150,145,120,.4), transparent 70%),
+    repeating-linear-gradient(97deg, rgba(190,182,158,.22) 0 3px, transparent 3px 26px),
+    linear-gradient(180deg, rgba(176,168,142,.3), rgba(140,136,118,.16));
+  mix-blend-mode:multiply;
+}
+.ba-clean{clip-path:inset(0 0 0 var(--split,52%))}
+.ba-clean::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(112deg, transparent 38%, rgba(255,255,255,.38) 42%, transparent 46%);
+}
+.ba-line{
+  position:absolute;top:0;bottom:0;left:var(--split,52%);width:3px;background:var(--pane);
+  box-shadow:0 0 0 1px rgba(14,44,62,.25);pointer-events:none;
+}
+.ba-grip{
+  position:absolute;top:50%;left:var(--split,52%);transform:translate(-50%,-50%);
+  width:66px;height:30px;border-radius:5px;pointer-events:none;
+  background:linear-gradient(180deg,#F2F7FA,#A9C0CD);
+  border:1px solid rgba(14,44,62,.3);
+  box-shadow:0 4px 12px rgba(8,30,44,.45);
+  display:flex;align-items:center;justify-content:center;gap:4px;
+}
+.ba-grip i{display:block;width:2px;height:12px;background:rgba(14,44,62,.4);border-radius:2px}
+.ba-range{
+  position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;
+}
+.ba-tag{
+  position:absolute;bottom:12px;font-family:"DM Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;background:rgba(7,22,32,.72);color:#EAF4FA;padding:4px 11px;border-radius:var(--r-pill);
+  pointer-events:none;backdrop-filter:blur(4px);
+}
+.ba-tag.l{left:12px}
+.ba-tag.r{right:12px}
+.ba-wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(24px,4vw,48px);align-items:center}
+@media (max-width:880px){.ba-wrap{grid-template-columns:1fr}}
+.ba-notes{display:flex;flex-direction:column;gap:18px}
+.ba-note{display:flex;gap:13px;align-items:flex-start}
+.ba-note .n{
+  font-family:"DM Mono",monospace;font-size:11px;color:var(--sky);flex:none;padding-top:3px;
+}
+.ba-note h4{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:15.5px;margin:0 0 3px;letter-spacing:-.01em}
+.ba-note p{font-size:14px;color:var(--ink-2)}
+
+/* ============================================================
+   pricing
+   ============================================================ */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+@media (max-width:880px){.tiers{grid-template-columns:1fr}}
+.tier{
+  background:var(--pane);border:1px solid var(--line);border-radius:var(--r-card);
+  padding:26px 24px 24px;display:flex;flex-direction:column;gap:14px;position:relative;
+  box-shadow:var(--shadow-1);
+}
+.tier.feature{border-color:var(--sky);box-shadow:var(--shadow-2), 0 0 0 1px var(--sky)}
+.tier.feature::before{
+  content:"most booked";position:absolute;top:-10px;left:24px;
+  font-family:"DM Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--sky);color:#fff;padding:3px 10px;border-radius:var(--r-pill);
+}
+.tier h3{font-size:19px}
+.tier .price{display:flex;align-items:baseline;gap:7px;font-family:"DM Mono",monospace}
+.tier .price b{font-size:34px;font-weight:500;letter-spacing:-.02em;color:var(--ink)}
+.tier .price span{font-size:12.5px;color:var(--ink-3)}
+.tier ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.tier li{display:flex;gap:9px;font-size:14.5px;color:var(--ink-2);line-height:1.45}
+.tier li svg{flex:none;color:var(--mint);margin-top:4px}
+.tier .btn{margin-top:auto}
+
+/* ============================================================
+   estimator
+   ============================================================ */
+.est{display:grid;grid-template-columns:1.25fr .95fr;gap:clamp(20px,3vw,34px);align-items:start}
+@media (max-width:900px){.est{grid-template-columns:1fr}}
+.form-card{background:var(--pane);border:1px solid var(--line);border-radius:var(--r-card);padding:clamp(20px,3vw,30px);box-shadow:var(--shadow-1)}
+.fieldset{border:0;padding:0;margin:0 0 24px}
+.fieldset:last-of-type{margin-bottom:0}
+.flabel{
+  font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:11px;display:block;
+}
+.segs{display:flex;flex-wrap:wrap;gap:8px}
+.seg{position:relative}
+.seg input{position:absolute;opacity:0;width:100%;height:100%;left:0;top:0;margin:0;cursor:pointer}
+.seg span{
+  display:block;padding:10px 16px;border:1px solid var(--line-2);border-radius:var(--r-pill);
+  font-size:14px;color:var(--ink-2);transition:all .16s;background:var(--pane);
+}
+.seg span em{
+  font-style:normal;font-family:"DM Mono",monospace;font-size:11.5px;
+  color:var(--mint);margin-left:6px;letter-spacing:.04em;
+}
+.seg input:checked + span{background:var(--frame);border-color:var(--frame);color:#EAF4FA}
+.seg input:checked + span em{color:var(--sun)}
+.seg input:focus-visible + span{outline:2.5px solid var(--sun);outline-offset:2px}
+.seg:hover span{border-color:var(--sky)}
+
+.count-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.count-val{
+  font-family:"DM Mono",monospace;font-size:30px;font-variant-numeric:tabular-nums;
+  min-width:2.4ch;color:var(--ink);
+}
+.count-unit{font-size:13.5px;color:var(--ink-3);max-width:20ch;line-height:1.35}
+input[type=range]{
+  -webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:var(--r-pill);
+  background:linear-gradient(90deg,var(--sky) var(--pct,30%),var(--line) var(--pct,30%));
+  margin:16px 0 0;cursor:pointer;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--pane);
+  border:2.5px solid var(--sky);box-shadow:var(--shadow-1);cursor:grab;
+}
+input[type=range]::-moz-range-thumb{
+  width:20px;height:20px;border-radius:50%;background:var(--pane);
+  border:2.5px solid var(--sky);box-shadow:var(--shadow-1);cursor:grab;
+}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:560px){.checks{grid-template-columns:1fr}}
+.check{position:relative;display:block}
+.check input{position:absolute;opacity:0;width:100%;height:100%;left:0;top:0;margin:0;cursor:pointer}
+.check span{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:11px 14px;border:1px solid var(--line);border-radius:6px;background:var(--pane-2);
+  font-size:14px;color:var(--ink-2);transition:all .16s;
+}
+.check span em{font-family:"DM Mono",monospace;font-style:normal;font-size:12px;color:var(--ink-3)}
+.check input:checked + span{border-color:var(--sky);background:var(--sky-wash);color:var(--ink)}
+.check input:focus-visible + span{outline:2.5px solid var(--sun);outline-offset:2px}
+
+.ins{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.ins{grid-template-columns:1fr}}
+.ins label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--ink-2)}
+.ins input,.ins select,.ins textarea{
+  font-family:inherit;font-size:15px;padding:11px 13px;border:1px solid var(--line-2);
+  border-radius:6px;background:var(--pane-2);color:var(--ink);width:100%;
+}
+.ins textarea{resize:vertical;min-height:78px}
+.ins .full{grid-column:1/-1}
+.ins input:focus,.ins select:focus,.ins textarea:focus{outline:2px solid var(--sky);outline-offset:0;border-color:var(--sky)}
+
+/* the running total, docked */
+.ticket{position:sticky;top:calc(88px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:0}
+.ticket-top{
+  background:var(--frame);color:#EAF4FA;border-radius:var(--r-card) var(--r-card) 0 0;
+  padding:24px 24px 22px;
+}
+.ticket-top .lbl{font-family:"DM Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#8FB3C6}
+.ticket-amt{
+  font-family:"DM Mono",monospace;font-size:clamp(30px,4.6vw,42px);letter-spacing:-.02em;
+  margin-top:8px;font-variant-numeric:tabular-nums;line-height:1.05;
+}
+.ticket-amt small{font-size:15px;color:#8FB3C6;letter-spacing:0}
+.ticket-note{font-size:12.5px;color:#9FC0D1;margin-top:9px;line-height:1.45}
+.ticket-body{
+  background:var(--pane);border:1px solid var(--line);border-top:0;
+  border-radius:0 0 var(--r-card) var(--r-card);padding:18px 24px 22px;
+}
+.lines{display:flex;flex-direction:column;gap:0;margin-bottom:16px}
+.line{
+  display:flex;justify-content:space-between;gap:12px;font-size:13.5px;
+  padding:7px 0;border-bottom:1px dashed var(--line);color:var(--ink-2);
+}
+.line:last-child{border-bottom:0}
+.line b{font-family:"DM Mono",monospace;font-weight:400;color:var(--ink);font-variant-numeric:tabular-nums}
+.line.save{color:var(--mint)}
+.line.save b{color:var(--mint)}
+.ticket-acts{display:flex;flex-direction:column;gap:9px}
+.ticket-acts .btn{width:100%}
+.ticket-micro{font-size:11.5px;color:var(--ink-3);text-align:center;margin-top:4px;line-height:1.4}
+.sent{
+  margin-top:14px;padding:14px;border:1px solid var(--mint);border-radius:6px;
+  background:var(--sky-wash);font-size:13.5px;color:var(--ink);line-height:1.5;
+}
+.sent-pre{
+  font-family:"DM Mono",monospace;font-size:11.5px;white-space:pre-wrap;color:var(--ink-2);
+  margin-top:10px;max-height:190px;overflow:auto;
+}
+
+/* ============================================================
+   service area
+   ============================================================ */
+.area{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(24px,4vw,52px);align-items:center}
+@media (max-width:880px){.area{grid-template-columns:1fr}}
+.zipbox{display:flex;gap:8px;margin-top:22px;flex-wrap:wrap}
+.zipbox input{
+  font-family:"DM Mono",monospace;font-size:16px;padding:12px 15px;border:1px solid var(--line-2);
+  border-radius:var(--r-pill);background:var(--pane);color:var(--ink);width:150px;letter-spacing:.06em;
+}
+.zipbox input:focus{outline:2px solid var(--sky);border-color:var(--sky)}
+.zipres{margin-top:12px;font-size:14px;min-height:22px;display:flex;align-items:center;gap:8px}
+.zipres.ok{color:var(--mint)}
+.zipres.no{color:var(--sun)}
+.towns{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+.town{
+  font-family:"DM Mono",monospace;font-size:12px;padding:5px 12px;border-radius:var(--r-pill);
+  background:var(--pane);border:1px solid var(--line);color:var(--ink-2);
+}
+.map-card{background:var(--pane);border:1px solid var(--line);border-radius:var(--r-card);padding:14px;box-shadow:var(--shadow-1);overflow:hidden}
+.map-card svg{display:block;width:100%;height:auto;max-width:100%}
+.dot-lbl{font-family:"DM Mono",monospace;font-size:9.5px;letter-spacing:.04em}
+
+/* ============================================================
+   reviews
+   ============================================================ */
+.tmpl-flag{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;
+  font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--sun-wash);border:1px dashed var(--sun);color:var(--ink-2);
+  padding:6px 13px;border-radius:var(--r-pill);
+}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.revs{grid-template-columns:1fr}}
+.rev{
+  background:var(--pane);border:1px solid var(--line);border-radius:var(--r-card);
+  padding:24px;display:flex;flex-direction:column;gap:13px;position:relative;box-shadow:var(--shadow-1);
+}
+.rev .stars{color:var(--sun);letter-spacing:.14em;font-size:14px}
+.rev p{font-size:15px;color:var(--ink-2);line-height:1.55;font-style:italic}
+.rev .who{
+  margin-top:auto;padding-top:8px;font-family:"DM Mono",monospace;font-size:11.5px;color:var(--ink-3);
+  border-top:1px solid var(--line);
+}
+.rev .sample{
+  position:absolute;top:14px;right:14px;font-family:"DM Mono",monospace;font-size:9px;
+  letter-spacing:.14em;color:var(--ink-3);border:1px dashed var(--line-2);
+  padding:2px 7px;border-radius:var(--r-pill);
+}
+
+/* ============================================================
+   faq
+   ============================================================ */
+.faq{max-width:78ch;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:19px 34px 19px 0;position:relative;
+  font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:17px;letter-spacing:-.015em;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:11px;height:11px;
+  border-right:2px solid var(--sky);border-bottom:2px solid var(--sky);
+  transform:translateY(-70%) rotate(45deg);transition:transform .25s;
+}
+.faq details[open] summary::after{transform:translateY(-25%) rotate(225deg)}
+.faq details p{padding:0 40px 20px 0;color:var(--ink-2);font-size:15px;line-height:1.6}
+
+/* ============================================================
+   final cta + footer
+   ============================================================ */
+.final{
+  background:var(--frame);color:#EAF4FA;border-radius:var(--r-card);
+  padding:clamp(32px,5vw,58px);display:grid;grid-template-columns:1.2fr .8fr;
+  gap:clamp(22px,3vw,40px);align-items:center;position:relative;overflow:hidden;
+}
+@media (max-width:760px){.final{grid-template-columns:1fr}}
+.final::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(600px 340px at 88% 0%, rgba(72,182,242,.26), transparent 62%);
+}
+.final h2{font-size:clamp(26px,3.6vw,40px);position:relative}
+.final p{color:#A9C7D8;margin-top:14px;position:relative;max-width:44ch}
+.final-acts{display:flex;flex-direction:column;gap:11px;position:relative}
+.final-acts .btn{width:100%}
+.final-acts .fine{font-size:12px;color:#8FB3C6;text-align:center}
+
+.foot{border-top:1px solid var(--line);padding-block:44px 52px;color:var(--ink-2);font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+@media (max-width:720px){.foot-grid{grid-template-columns:1fr;gap:22px}}
+.foot h4{font-family:"DM Mono",monospace;font-weight:500;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--sky)}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.foot-bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-family:"DM Mono",monospace;font-size:11.5px;color:var(--ink-3);
+}
+
+/* editable-value marker so Jason can find the placeholders */
+.swap{border-bottom:1px dotted var(--line-2)}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.12s !important}
+  .bubbles{display:none}
+  .glint{display:none}
+}
+</style>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect x="1.4" y="1.4" width="25.2" height="25.2" rx="2.4" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M14 2v24M2 14h24" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M4.6 10.4 10.4 4.6" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name"><span data-biz="short">S&amp;S</span><span class="brand-rest" data-biz="rest"> Window Washing</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#services">What we clean</a>
+      <a href="#work">Before / after</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#quote">Instant quote</a>
+      <a href="#area">Service area</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="#" data-biz="phone-link"><span data-biz="phone">(510) 555-0147</span></a>
+      <a class="btn btn-sun btn-sm" href="#quote">Free quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+
+    <div>
+      <p class="eyebrow">East Bay · Albany to Rockridge</p>
+      <h1>Windows so clean<br>the <span class="lit">fog</span> looks fake.</h1>
+      <p class="hero-sub">
+        Residential and storefront window washing across Berkeley, Albany, El Cerrito
+        and the rest of the East Bay. Screens, tracks and sills are part of the job —
+        not a line item we spring on you at the door.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-sun" href="#quote">
+          Build my quote
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#" data-biz="phone-link">Call <span data-biz="phone">(510) 555-0147</span></a>
+      </div>
+      <div class="chips">
+        <span class="chip"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Licensed &amp; insured</span>
+        <span class="chip"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>7-day rain guarantee</span>
+        <span class="chip"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Water-fed poles to 3 stories</span>
+        <span class="chip"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Quotes back same day</span>
+      </div>
+    </div>
+
+    <!-- ---------- the awning sash ---------- -->
+    <div class="awning-stage">
+      <div class="awning" id="awning" tabindex="0" role="button"
+           aria-label="Open the window to a free quote"
+           aria-expanded="false">
+
+        <!-- what's behind the glass -->
+        <div class="reveal">
+          <p class="reveal-eyebrow">no obligation · 60 seconds</p>
+          <h3>Open the window to a free quote</h3>
+          <p>Pane count in, price out. No phone tag, no sales visit.</p>
+          <a class="btn btn-sun" href="#quote" id="awningCta">
+            Get my free quote
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="sill" aria-hidden="true"></div>
+
+        <!-- the pane that lifts -->
+        <div class="sash" aria-hidden="true">
+          <div class="lites"><span></span><span></span><span></span><span></span></div>
+          <span class="glint"></span>
+          <p class="sash-title">Grimy? Same.<br>Let's fix that.</p>
+          <p class="sash-sub">One pane between you and a price.</p>
+          <div class="sash-prompt">
+            <span class="handle"></span>
+            <span class="sash-hint"><span class="arw">↑</span> <span id="hintText">Hover to open</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What we clean</p>
+      <h2>Every lite, every track, every time.</h2>
+      <p>Berkeley housing stock is mostly Craftsman and Victorian — divided-lite sashes, wood frames, storm screens. We price and clean for that, not for a generic tract house.</p>
+    </div>
+
+    <div class="grid-svc">
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="26" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 3v26M3 16h26" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <h3>Interior &amp; exterior glass</h3>
+        <p>Both sides, hand-detailed with a squeegee and scrim. Divided lites get done pane by pane — no smearing a whole sash in one pass and calling it done.</p>
+        <span class="tag">Standard on every job</span>
+      </article>
+
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="4" y="5" width="24" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M4 11h24M4 17h24M4 23h24M10 5v22M16 5v22M22 5v22" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+        </svg>
+        <h3>Screens, tracks &amp; sills</h3>
+        <p>Screens come out, get washed and dried flat so the mesh doesn't bow. Tracks are vacuumed first, then wiped — otherwise you're just making mud.</p>
+        <span class="tag">Included · full service</span>
+      </article>
+
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 4c4 6 7 9.4 7 13a7 7 0 1 1-14 0c0-3.6 3-7 7-13Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M13 17.5c.4 2 1.7 3.2 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <h3>Hard water &amp; mineral etch</h3>
+        <p>Sprinkler spotting and the salt film that blows in off the bay. Lifted with a cerium oxide polish and a rotary pad — never a razor blade on tempered glass.</p>
+        <span class="tag">Assessed on site</span>
+      </article>
+
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M6 28 20 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M9.5 22h8M12 17h8M14.5 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="24" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <h3>Second &amp; third story</h3>
+        <p>Carbon-fibre water-fed poles and deionized water from the ground up. Nothing leaning on your gutters, no ladder feet punching into the siding or the flower beds.</p>
+        <span class="tag">Hillside homes welcome</span>
+      </article>
+
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M4 12h24v16H4z" stroke="currentColor" stroke-width="2"/>
+          <path d="M4 12 7 5h18l3 7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M13 28v-9h6v9" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        <h3>Storefront routes</h3>
+        <p>Solano, San Pablo, Fourth Street, Telegraph. Weekly, biweekly or monthly — done before you unlock, invoiced monthly so you're not paying per visit.</p>
+        <span class="tag">Recurring · net 15</span>
+      </article>
+
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M5 21h22l-3-12H8L5 21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M11 9 9.5 21M21 9l1.5 12M6.5 15h19" stroke="currentColor" stroke-width="1.3" opacity=".6"/>
+          <path d="M9 25h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3>Solar panels &amp; gutters</h3>
+        <p>Panel rinse with deionized water — no soap residue to bake on and cut your output. Gutters cleared by hand, bagged, and photographed before and after.</p>
+        <span class="tag">Add-on</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps. None of them are "wait for a callback."</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Count your panes</h3>
+        <p>Walk the house once and count the windows. Sliding door counts as two, a picture window counts as one. Close enough is fine — the estimator handles a range.</p>
+        <span class="when">≈ 2 minutes</span>
+      </div>
+      <div class="step">
+        <h3>Get a fixed price</h3>
+        <p>The quote tool below gives you a real range on the spot. Send it over and we confirm the exact number, in writing, usually the same day.</p>
+        <span class="when">Same day</span>
+      </div>
+      <div class="step">
+        <h3>We show up and squeegee</h3>
+        <p>We text when we're on the way. You don't need to be home for exterior-only work — just unlock the side gate and point us at the hose bib.</p>
+        <span class="when">2–4 hrs typical</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BEFORE / AFTER ============================ -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Before / after</p>
+      <h2>Drag the squeegee.</h2>
+      <p>A north-facing bay window in the Berkeley flats after one winter. Salt film, redwood pollen, and sprinkler overspray along the bottom rail.</p>
+    </div>
+
+    <div class="ba-wrap">
+      <div class="ba" id="ba">
+        <div class="ba-layer ba-dirty">
+          <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="width:100%;height:100%;display:block">
+            <defs>
+              <linearGradient id="skyD" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#8FB8D6"/><stop offset="55%" stop-color="#C6D8E2"/><stop offset="100%" stop-color="#E4E4D8"/>
+              </linearGradient>
+              <linearGradient id="bayD" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#7C9BAE"/><stop offset="100%" stop-color="#5E7E92"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="450" fill="url(#skyD)"/>
+            <path d="M0 236 L92 208 L168 228 L262 190 L352 220 L440 198 L540 226 L640 202 L724 224 L800 206 L800 268 L0 268Z" fill="#6E8C7A" opacity=".85"/>
+            <path d="M0 252 L110 236 L210 250 L320 232 L430 248 L540 234 L660 250 L800 236 L800 286 L0 286Z" fill="#5C7A68" opacity=".9"/>
+            <rect y="286" width="800" height="90" fill="url(#bayD)"/>
+            <path d="M0 300h800M0 318h800M0 338h800M0 358h800" stroke="#8EA9B8" stroke-width="1.6" opacity=".45"/>
+            <path d="M318 300 l0-40 22 40z" fill="#EEF2F0" opacity=".9"/>
+            <path d="M318 300 l-16 0 16-30z" fill="#D6DEDC" opacity=".9"/>
+            <rect y="376" width="800" height="74" fill="#7E8C74"/>
+            <g fill="#95A08A">
+              <rect x="40" y="342" width="76" height="52"/><rect x="150" y="352" width="62" height="42"/>
+              <rect x="560" y="346" width="84" height="48"/><rect x="674" y="356" width="58" height="38"/>
+            </g>
+            <g fill="#6B7A62">
+              <path d="M40 342 78 318 116 342z"/><path d="M560 346 602 322 644 346z"/>
+            </g>
+            <g fill="#5E7052">
+              <ellipse cx="256" cy="360" rx="34" ry="46"/><ellipse cx="470" cy="368" rx="28" ry="38"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="ba-layer ba-clean" id="baClean">
+          <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="width:100%;height:100%;display:block">
+            <defs>
+              <linearGradient id="skyC" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#4FA9E4"/><stop offset="52%" stop-color="#A9D9F4"/><stop offset="100%" stop-color="#FBE6C0"/>
+              </linearGradient>
+              <linearGradient id="bayC" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2E86BE"/><stop offset="100%" stop-color="#1D5F8E"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="450" fill="url(#skyC)"/>
+            <circle cx="676" cy="92" r="52" fill="#FFE9B0" opacity=".45"/>
+            <circle cx="676" cy="92" r="34" fill="#FFD98A"/>
+            <path d="M0 236 L92 208 L168 228 L262 190 L352 220 L440 198 L540 226 L640 202 L724 224 L800 206 L800 268 L0 268Z" fill="#79A96F"/>
+            <path d="M0 252 L110 236 L210 250 L320 232 L430 248 L540 234 L660 250 L800 236 L800 286 L0 286Z" fill="#5E9457"/>
+            <rect y="286" width="800" height="90" fill="url(#bayC)"/>
+            <path d="M0 300h800M0 318h800M0 338h800M0 358h800" stroke="#9FD6F2" stroke-width="1.6" opacity=".5"/>
+            <path d="M318 300 l0-40 22 40z" fill="#FFFFFF"/>
+            <path d="M318 300 l-16 0 16-30z" fill="#E8F4FB"/>
+            <rect y="376" width="800" height="74" fill="#8CAF74"/>
+            <g fill="#C9D4BC">
+              <rect x="40" y="342" width="76" height="52"/><rect x="150" y="352" width="62" height="42"/>
+              <rect x="560" y="346" width="84" height="48"/><rect x="674" y="356" width="58" height="38"/>
+            </g>
+            <g fill="#8E6F56">
+              <path d="M40 342 78 318 116 342z"/><path d="M560 346 602 322 644 346z"/>
+            </g>
+            <g fill="#4C7A43">
+              <ellipse cx="256" cy="360" rx="34" ry="46"/><ellipse cx="470" cy="368" rx="28" ry="38"/>
+            </g>
+            <g fill="#FFE9A8" opacity=".75">
+              <rect x="56" y="356" width="14" height="14"/><rect x="86" y="356" width="14" height="14"/>
+              <rect x="578" y="360" width="14" height="14"/><rect x="608" y="360" width="14" height="14"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="ba-line" id="baLine"></div>
+        <div class="ba-grip" id="baGrip"><i></i><i></i><i></i></div>
+        <span class="ba-tag l">Before</span>
+        <span class="ba-tag r">After</span>
+        <input class="ba-range" id="baRange" type="range" min="0" max="100" value="52" aria-label="Wipe between before and after">
+      </div>
+
+      <div class="ba-notes">
+        <div class="ba-note">
+          <span class="n mono">01</span>
+          <div><h4>Salt film</h4><p>West-facing glass within a couple miles of the shoreline hazes over in about six weeks. It's not dirt — it's a mineral layer, and it needs surfactant, not a hose.</p></div>
+        </div>
+        <div class="ba-note">
+          <span class="n mono">02</span>
+          <div><h4>Bottom-rail spotting</h4><p>Sprinklers throw calcium onto the lower six inches. Caught early it wipes off. Left for two summers it etches into the glass permanently.</p></div>
+        </div>
+        <div class="ba-note">
+          <span class="n mono">03</span>
+          <div><h4>Redwood pollen</h4><p>Late spring, every year, all over North Berkeley and Kensington. It's sticky enough that a dry wipe just grinds it into the surface.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRICING ============================ -->
+<section class="sec" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Pricing</p>
+      <h2>Priced per pane, not per vibe.</h2>
+      <p>Starting rates below. Your actual number depends on pane count, stories and add-ons — the estimator works it out in real time.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier">
+        <h3>Exterior refresh</h3>
+        <div class="price"><b>$6</b><span>/ pane · <span class="mono">$185</span> minimum</span></div>
+        <ul>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Outside glass, hand-finished</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Frames and sills wiped down</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>No one needs to be home</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>7-day rain guarantee</li>
+        </ul>
+        <a class="btn btn-ghost" href="#quote">Estimate this</a>
+      </div>
+
+      <div class="tier feature">
+        <h3>Full service — inside &amp; out</h3>
+        <div class="price"><b>$9.50</b><span>/ pane · <span class="mono">$185</span> minimum</span></div>
+        <ul>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Both sides of every pane</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Screens washed and dried flat</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tracks vacuumed, then wiped</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Shoe covers, drop cloths, no drips</li>
+        </ul>
+        <a class="btn btn-sun" href="#quote">Estimate this</a>
+      </div>
+
+      <div class="tier">
+        <h3>Storefront route</h3>
+        <div class="price"><b>$5</b><span>/ pane · recurring</span></div>
+        <ul>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Weekly, biweekly or monthly</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Done before opening hours</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Entry door glass and push plates</li>
+          <li><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>One monthly invoice, net 15</li>
+        </ul>
+        <a class="btn btn-ghost" href="#quote">Estimate this</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ESTIMATOR ============================ -->
+<section class="sec" id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Instant quote</p>
+      <h2>Your price, before you talk to anyone.</h2>
+      <p>Everything updates live as you go. Nothing is sent until you press the button at the bottom.</p>
+    </div>
+
+    <div class="est">
+      <!-- ---- form ---- -->
+      <form class="form-card" id="quoteForm" novalidate>
+
+        <fieldset class="fieldset">
+          <span class="flabel">Property</span>
+          <div class="segs" role="radiogroup" aria-label="Property type">
+            <label class="seg"><input type="radio" name="ptype" id="ptype-house" value="house" checked><span>House</span></label>
+            <label class="seg"><input type="radio" name="ptype" id="ptype-condo" value="condo"><span>Condo / apartment</span></label>
+            <label class="seg"><input type="radio" name="ptype" id="ptype-store" value="store"><span>Storefront</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset" id="storiesSet">
+          <span class="flabel">Stories</span>
+          <div class="segs" role="radiogroup" aria-label="Number of stories">
+            <label class="seg"><input type="radio" name="stories" id="st1" value="1" checked><span>1 story</span></label>
+            <label class="seg"><input type="radio" name="stories" id="st2" value="2"><span>2 stories</span></label>
+            <label class="seg"><input type="radio" name="stories" id="st3" value="3"><span>3+ / hillside</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <span class="flabel">Panes of glass</span>
+          <div class="count-row">
+            <span class="count-val mono" id="paneOut">22</span>
+            <span class="count-unit">panes — sliding door counts as two, a bay window counts as three</span>
+          </div>
+          <input type="range" id="panes" min="4" max="80" value="22" step="1" aria-label="Number of panes">
+        </fieldset>
+
+        <fieldset class="fieldset" id="sidesSet">
+          <span class="flabel">Which sides</span>
+          <div class="segs" role="radiogroup" aria-label="Which sides">
+            <label class="seg"><input type="radio" name="sides" id="sd-out" value="out"><span>Exterior only</span></label>
+            <label class="seg"><input type="radio" name="sides" id="sd-both" value="both" checked><span>Inside &amp; out</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <span class="flabel">Add-ons</span>
+          <div class="checks">
+            <label class="check"><input type="checkbox" id="ad-screens"><span>Screens washed <em>$3 ea</em></span></label>
+            <label class="check"><input type="checkbox" id="ad-tracks"><span>Tracks &amp; sills <em>$3 ea</em></span></label>
+            <label class="check"><input type="checkbox" id="ad-hard"><span>Hard-water removal <em>$6 / pane</em></span></label>
+            <label class="check"><input type="checkbox" id="ad-sky"><span>Skylights <em>$18 ea</em></span></label>
+            <label class="check"><input type="checkbox" id="ad-solar"><span>Solar panel rinse <em>$8 / panel</em></span></label>
+            <label class="check"><input type="checkbox" id="ad-gutter"><span>Gutter clear-out <em>$165</em></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <span class="flabel">How often</span>
+          <div class="segs" role="radiogroup" aria-label="Frequency">
+            <label class="seg"><input type="radio" name="freq" id="fq-once" value="once" checked><span>One time</span></label>
+            <label class="seg"><input type="radio" name="freq" id="fq-semi" value="semi"><span>Twice a year <em>−10%</em></span></label>
+            <label class="seg"><input type="radio" name="freq" id="fq-quart" value="quarterly"><span>Quarterly <em>−15%</em></span></label>
+            <label class="seg"><input type="radio" name="freq" id="fq-month" value="monthly"><span>Monthly <em>−20%</em></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <span class="flabel">Where to send it</span>
+          <div class="ins">
+            <label for="f-name">Name<input type="text" id="f-name" autocomplete="name" placeholder="Jason C."></label>
+            <label for="f-phone">Phone<input type="tel" id="f-phone" autocomplete="tel" placeholder="(510) 555-0198"></label>
+            <label class="full" for="f-email">Email<input type="email" id="f-email" autocomplete="email" placeholder="you@email.com"></label>
+            <label for="f-city">City
+              <select id="f-city">
+                <option>Berkeley</option><option>Albany</option><option>El Cerrito</option>
+                <option>Kensington</option><option>Richmond</option><option>El Sobrante</option>
+                <option>Emeryville</option><option>Oakland</option><option>Piedmont</option>
+                <option>Somewhere else</option>
+              </select>
+            </label>
+            <label for="f-when">Ideal week
+              <select id="f-when">
+                <option>As soon as possible</option><option>Within 2 weeks</option>
+                <option>This month</option><option>Just pricing for now</option>
+              </select>
+            </label>
+            <label class="full" for="f-notes">Anything we should know<textarea id="f-notes" placeholder="Stained glass in the front room, dog in the yard, gate code 1994…"></textarea></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <!-- ---- live ticket ---- -->
+      <aside class="ticket" aria-live="polite">
+        <div class="ticket-top">
+          <span class="lbl">Your estimate</span>
+          <div class="ticket-amt" id="amt">$285 – $365</div>
+          <p class="ticket-note" id="amtNote">Based on 22 panes, inside &amp; out, single story.</p>
+        </div>
+        <div class="ticket-body">
+          <div class="lines" id="lines"></div>
+          <div class="ticket-acts">
+            <button class="btn btn-sun" type="button" id="sendBtn">Send this quote request</button>
+            <button class="btn btn-ghost" type="button" id="copyBtn">Copy the details</button>
+          </div>
+          <p class="ticket-micro">Estimates are firm within the range unless there's hard-water damage we can't see from the driveway. We confirm in writing before anyone shows up.</p>
+          <div class="sent" id="sent" hidden></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICE AREA ============================ -->
+<section class="sec" id="area">
+  <div class="wrap">
+    <div class="area">
+      <div>
+        <p class="eyebrow">Service area</p>
+        <h2>We stay on this side of the tunnel.</h2>
+        <p style="color:var(--ink-2);margin-top:14px;max-width:44ch">
+          The whole route runs the flats and hills between Point Richmond and Rockridge.
+          Staying tight means we can come back for a free re-do if it rains on you.
+        </p>
+
+        <div class="zipbox">
+          <input type="text" id="zip" inputmode="numeric" maxlength="5" placeholder="94702" aria-label="Your ZIP code">
+          <button class="btn btn-sky" type="button" id="zipBtn">Check my ZIP</button>
+        </div>
+        <p class="zipres" id="zipres"></p>
+
+        <div class="towns">
+          <span class="town">Berkeley</span><span class="town">North Berkeley</span>
+          <span class="town">Albany</span><span class="town">El Cerrito</span>
+          <span class="town">Kensington</span><span class="town">Richmond Annex</span>
+          <span class="town">Point Richmond</span><span class="town">Emeryville</span>
+          <span class="town">Rockridge</span><span class="town">Temescal</span>
+          <span class="town">Piedmont</span>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <svg viewBox="0 0 520 440" role="img" aria-label="Map of the East Bay service area from Point Richmond down to Rockridge">
+          <rect width="520" height="440" fill="var(--pane-2)"/>
+          <!-- bay -->
+          <path d="M0 0 L132 0 C118 70 96 132 84 196 C72 262 60 330 58 440 L0 440 Z" fill="var(--sky-wash)"/>
+          <path d="M132 0 C118 70 96 132 84 196 C72 262 60 330 58 440" fill="none" stroke="var(--sky)" stroke-width="2" opacity=".55"/>
+          <!-- hills -->
+          <path d="M332 0 C318 90 330 190 352 268 C372 338 392 392 404 440 L520 440 L520 0 Z" fill="var(--ground-2)"/>
+          <path d="M332 0 C318 90 330 190 352 268 C372 338 392 392 404 440" fill="none" stroke="var(--line-2)" stroke-width="1.6" stroke-dasharray="5 5"/>
+          <!-- freeway 80 -->
+          <path d="M150 16 C140 96 150 200 176 292 C196 362 214 404 228 440" fill="none" stroke="var(--line-2)" stroke-width="7" opacity=".55"/>
+          <path d="M150 16 C140 96 150 200 176 292 C196 362 214 404 228 440" fill="none" stroke="var(--pane)" stroke-width="1.6" stroke-dasharray="7 9"/>
+          <!-- dots -->
+          <g>
+            <circle cx="150" cy="46" r="6.5" fill="var(--sky)"/>
+            <text x="164" y="50" class="dot-lbl" fill="var(--ink-2)">Point Richmond</text>
+            <circle cx="196" cy="112" r="6.5" fill="var(--sky)"/>
+            <text x="210" y="116" class="dot-lbl" fill="var(--ink-2)">El Cerrito</text>
+            <circle cx="268" cy="140" r="6.5" fill="var(--sky)"/>
+            <text x="282" y="144" class="dot-lbl" fill="var(--ink-2)">Kensington</text>
+            <circle cx="184" cy="178" r="6.5" fill="var(--sky)"/>
+            <text x="198" y="182" class="dot-lbl" fill="var(--ink-2)">Albany</text>
+            <circle cx="206" cy="238" r="11" fill="var(--sun)"/>
+            <circle cx="206" cy="238" r="20" fill="none" stroke="var(--sun)" stroke-width="1.6" opacity=".55"/>
+            <text x="232" y="242" class="dot-lbl" fill="var(--ink)" font-weight="600">Berkeley — base</text>
+            <circle cx="176" cy="316" r="6.5" fill="var(--sky)"/>
+            <text x="190" y="320" class="dot-lbl" fill="var(--ink-2)">Emeryville</text>
+            <circle cx="258" cy="336" r="6.5" fill="var(--sky)"/>
+            <text x="272" y="340" class="dot-lbl" fill="var(--ink-2)">Rockridge</text>
+            <circle cx="238" cy="392" r="6.5" fill="var(--sky)"/>
+            <text x="252" y="396" class="dot-lbl" fill="var(--ink-2)">Temescal</text>
+            <circle cx="312" cy="376" r="6.5" fill="var(--sky)"/>
+            <text x="326" y="380" class="dot-lbl" fill="var(--ink-2)">Piedmont</text>
+          </g>
+          <text x="22" y="418" class="dot-lbl" fill="var(--sky)" opacity=".8">SAN FRANCISCO BAY</text>
+          <text x="418" y="60" class="dot-lbl" fill="var(--ink-3)" opacity=".8">HILLS</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ REVIEWS ============================ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Reviews</p>
+      <h2>What neighbors say.</h2>
+      <span class="tmpl-flag">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 5v4M8 11.4v.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8" cy="8" r="6.4" stroke="currentColor" stroke-width="1.6"/></svg>
+        Placeholder copy — swap in real Google / Yelp reviews before launch
+      </span>
+    </div>
+
+    <div class="revs">
+      <article class="rev">
+        <span class="sample">SAMPLE</span>
+        <span class="stars" aria-label="Five stars">★★★★★</span>
+        <p>Replace this with a real review. Paste the customer's own words, keep it short, and use their first name and neighborhood underneath.</p>
+        <span class="who">First name · Neighborhood · Source</span>
+      </article>
+      <article class="rev">
+        <span class="sample">SAMPLE</span>
+        <span class="stars" aria-label="Five stars">★★★★★</span>
+        <p>The strongest reviews name the specific thing you fixed — hard water on a picture window, a three-story hillside job, a storefront done before opening.</p>
+        <span class="who">First name · Neighborhood · Source</span>
+      </article>
+      <article class="rev">
+        <span class="sample">SAMPLE</span>
+        <span class="stars" aria-label="Five stars">★★★★★</span>
+        <p>Ask for a review by text the evening of the job, with a direct link. That single habit is what fills this section within a month.</p>
+        <span class="who">First name · Neighborhood · Source</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Questions</p>
+      <h2>The stuff people actually ask.</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Do I need to be home?</summary>
+        <p>Not for exterior-only work — we just need access to the side gate and an outdoor spigot. For inside-and-out we do need someone there to let us in, and we'll give you a two-hour arrival window the day before rather than an all-day one.</p>
+      </details>
+      <details>
+        <summary>What happens if it rains right after?</summary>
+        <p>Rain on clean glass doesn't actually dirty it — what leaves spots is dirt already sitting on the frame washing down. If your windows look worse within seven days of a job, text us a photo and we come back and redo the affected panes at no charge.</p>
+      </details>
+      <details>
+        <summary>Can you reach a third story on a hillside lot?</summary>
+        <p>Yes. Water-fed carbon poles reach about 40 feet from stable ground, so most El Cerrito and Kensington hillside homes are done without a ladder ever touching the house. If a face genuinely can't be reached safely, we'll tell you before booking instead of finding out on the day.</p>
+      </details>
+      <details>
+        <summary>Will hard-water stains actually come off?</summary>
+        <p>Usually. Light mineral spotting comes off with an acidic gel and a lot of dwell time. Deep etching — where the mineral has eaten into the glass — needs a cerium oxide polish, and some of it is permanent. We test one pane first and tell you honestly what's recoverable before charging for the whole house.</p>
+      </details>
+      <details>
+        <summary>Do you clean stained glass, leaded glass, or old wavy panes?</summary>
+        <p>Yes, and carefully — no pressure, no ammonia, no scrapers. Original Victorian glass in the Berkeley flats is thin and already stressed. Flag it in the notes and we'll hand-clean those sashes separately.</p>
+      </details>
+      <details>
+        <summary>How do I pay?</summary>
+        <p>Card, Zelle, Venmo or check, after the work is done and you've looked at it. No deposit for residential jobs. Storefront routes are invoiced monthly, net 15.</p>
+      </details>
+      <details>
+        <summary>Are you insured?</summary>
+        <p>Licensed, bonded and carrying general liability plus workers' comp. Certificates go out with every quote, and property managers can get us added as an additional insured on request.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FINAL CTA ============================ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="final">
+      <div>
+        <h2>Open the window. Get the price.</h2>
+        <p>Two minutes of clicking gets you a real number. No sales visit, no "starting at," no callback that never comes.</p>
+      </div>
+      <div class="final-acts">
+        <a class="btn btn-sun" href="#quote">Build my quote</a>
+        <a class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:#EAF4FA" href="#" data-biz="phone-link">Or call <span data-biz="phone">(510) 555-0147</span></a>
+        <span class="fine" data-biz="hours">Mon–Sat, 8am–6pm</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:12px">
+          <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect x="1.4" y="1.4" width="25.2" height="25.2" rx="2.4" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M14 2v24M2 14h24" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M4.6 10.4 10.4 4.6" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-name" data-biz="name">S&amp;S Window Washing</span>
+        </a>
+        <p style="max-width:34ch;color:var(--ink-2)">Window washing for the East Bay flats and hills. Family-run, fully insured, back when it rains.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#" data-biz="phone-link"><span data-biz="phone">(510) 555-0147</span></a></li>
+          <li><a href="#" data-biz="email-link"><span data-biz="email">hello@sightlinewindows.com</span></a></li>
+          <li data-biz="hours">Mon–Sat, 8am–6pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Area</h4>
+        <ul>
+          <li>Berkeley · Albany</li>
+          <li>El Cerrito · Kensington</li>
+          <li>Richmond · Emeryville</li>
+          <li>North Oakland · Piedmont</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> <span data-biz="name">S&amp;S Window Washing</span> · Lic. <span class="swap">#0000000</span></span>
+      <span>Built in Berkeley</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   1. BUSINESS DETAILS — edit these six lines and the whole
+      site updates. Nothing else needs touching.
+   ============================================================ */
+const BIZ = {
+  name:  "S&S Window Washing",   // full name — footer, emails, quote summary
+  short: "S&S",                  // short mark for the top-left logo
+  rest:  " Window Washing",      // the part of the logo that hides on small phones
+  phone: "(510) 555-0147",       // <- your real number
+  tel:   "+15105550147",         // <- same number, digits only, for tap-to-call
+  email: "hello@sswindowwashing.com",
+  hours: "Mon–Sat, 8am–6pm"
+};
+
+/* ============================================================
+   2. YOUR RATES — every number the estimator uses.
+   ============================================================ */
+const RATE = {
+  minimum:        185,
+  perPaneOut:     6,
+  perPaneBoth:    9.5,
+  storefrontPane: 5,
+  storyAdd:       2,     // per pane, per story above the first
+  screen:         3,     // per pane
+  track:          3,     // per pane
+  hardWater:      6,     // per pane
+  skylight:       18,    // each, assumed 2
+  skylightQty:    2,
+  solar:          8,     // per panel, assumed 12
+  solarQty:       12,
+  gutters:        165,
+  discount: { once:0, semi:.10, quarterly:.15, monthly:.20 },
+  spread:         .13    // ± range shown to the customer
+};
+
+/* ZIPs we serve */
+const ZIPS = {
+  "94702":"Berkeley (West)", "94703":"Berkeley (Central)", "94704":"Berkeley (Southside)",
+  "94705":"Berkeley (Elmwood)", "94706":"Albany", "94707":"Berkeley (Thousand Oaks)",
+  "94708":"Berkeley Hills", "94709":"North Berkeley", "94710":"West Berkeley",
+  "94530":"El Cerrito", "94805":"Richmond Annex", "94801":"Point Richmond",
+  "94804":"Richmond", "94608":"Emeryville", "94609":"Temescal",
+  "94618":"Rockridge", "94611":"Piedmont / Montclair", "94610":"Grand Lake"
+};
+
+/* ---------- fill in the business details ---------- */
+(function fillBiz(){
+  document.querySelectorAll('[data-biz]').forEach(el=>{
+    const k = el.getAttribute('data-biz');
+    if(k==='name')  el.textContent = BIZ.name;
+    if(k==='short') el.textContent = BIZ.short;
+    if(k==='rest')  el.textContent = BIZ.rest;
+    if(k==='phone') el.textContent = BIZ.phone;
+    if(k==='email') el.textContent = BIZ.email;
+    if(k==='hours') el.textContent = BIZ.hours;
+    if(k==='phone-link') el.setAttribute('href','tel:'+BIZ.tel);
+    if(k==='email-link') el.setAttribute('href','mailto:'+BIZ.email);
+  });
+  const yr = document.getElementById('yr');
+  if(yr) yr.textContent = new Date().getFullYear();
+})();
+
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ============================================================
+   3. THE AWNING SASH
+   ============================================================ */
+(function awning(){
+  const el = document.getElementById('awning');
+  const hint = document.getElementById('hintText');
+  if(!el) return;
+
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  let locked = false;
+
+  const open  = ()=>{ el.classList.add('is-open'); el.setAttribute('aria-expanded','true'); };
+  const close = ()=>{ if(locked) return; el.classList.remove('is-open'); el.setAttribute('aria-expanded','false'); };
+
+  if(fine){
+    el.addEventListener('mouseenter', open);
+    el.addEventListener('mouseleave', close);
+  }else{
+    hint.textContent = 'Tap to open';
+  }
+
+  el.addEventListener('focusin', open);
+  el.addEventListener('focusout', e=>{ if(!el.contains(e.relatedTarget)) close(); });
+
+  el.addEventListener('click', e=>{
+    if(e.target.closest('#awningCta')) return;      // let the button work
+    locked = !locked;
+    locked ? open() : close();
+  });
+  el.addEventListener('keydown', e=>{
+    if(e.key==='Enter' || e.key===' '){ e.preventDefault(); locked = !locked; locked ? open() : close(); }
+  });
+
+  // on touch devices, crack it open once it scrolls into view so nobody misses it
+  if(!fine && !reduce && 'IntersectionObserver' in window){
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(en=>{
+        if(en.isIntersecting){ setTimeout(open, 700); io.disconnect(); }
+      });
+    },{threshold:.55});
+    io.observe(el);
+  }
+})();
+
+/* ---------- soap bubbles ---------- */
+(function bubbles(){
+  const host = document.getElementById('bubbles');
+  if(!host || reduce) return;
+  for(let i=0;i<14;i++){
+    const b = document.createElement('span');
+    const size = 6 + Math.random()*26;
+    b.className = 'bub';
+    b.style.width = b.style.height = size+'px';
+    b.style.left = (Math.random()*100)+'%';
+    b.style.animationDuration = (13 + Math.random()*16)+'s';
+    b.style.animationDelay = (-Math.random()*22)+'s';
+    b.style.opacity = .5 + Math.random()*.4;
+    host.appendChild(b);
+  }
+})();
+
+/* ============================================================
+   4. BEFORE / AFTER SQUEEGEE
+   ============================================================ */
+(function beforeAfter(){
+  const range = document.getElementById('baRange');
+  const clean = document.getElementById('baClean');
+  const line  = document.getElementById('baLine');
+  const grip  = document.getElementById('baGrip');
+  if(!range) return;
+  const paint = ()=>{
+    const v = range.value + '%';
+    clean.style.clipPath = 'inset(0 0 0 '+v+')';
+    line.style.left = v;
+    grip.style.left = v;
+  };
+  range.addEventListener('input', paint);
+  paint();
+})();
+
+/* ============================================================
+   5. THE ESTIMATOR
+   ============================================================ */
+(function estimator(){
+  const $ = id => document.getElementById(id);
+  const money = n => '$' + Math.round(n).toLocaleString('en-US');
+
+  const panes = $('panes'), paneOut = $('paneOut');
+  const amt = $('amt'), amtNote = $('amtNote'), lines = $('lines');
+  const storiesSet = $('storiesSet'), sidesSet = $('sidesSet');
+  if(!panes) return;
+
+  const val = name => (document.querySelector('input[name="'+name+'"]:checked')||{}).value;
+
+  function compute(){
+    const n      = +panes.value;
+    const ptype  = val('ptype');
+    const store  = ptype === 'store';
+    const sides  = store ? 'out' : val('sides');
+    const floors = store ? 1 : +val('stories');
+    const freq   = val('freq');
+
+    const rows = [];
+    let base;
+    if(store){
+      base = n * RATE.storefrontPane;
+      rows.push(['Storefront glass · ' + n + ' panes', base]);
+    }else{
+      const per = sides === 'both' ? RATE.perPaneBoth : RATE.perPaneOut;
+      base = n * per;
+      rows.push([(sides==='both'?'Inside & out':'Exterior only') + ' · ' + n + ' panes', base]);
+      if(floors > 1){
+        const up = n * RATE.storyAdd * (floors - 1);
+        base += up;
+        rows.push(['Height access · ' + floors + (floors>=3?'+':'') + ' stories', up]);
+      }
+    }
+
+    if($('ad-screens').checked){ const c = n*RATE.screen;    base += c; rows.push(['Screens washed', c]); }
+    if($('ad-tracks').checked){  const c = n*RATE.track;     base += c; rows.push(['Tracks & sills', c]); }
+    if($('ad-hard').checked){    const c = n*RATE.hardWater; base += c; rows.push(['Hard-water removal', c]); }
+    if($('ad-sky').checked){     const c = RATE.skylight*RATE.skylightQty; base += c; rows.push(['Skylights · est. '+RATE.skylightQty, c]); }
+    if($('ad-solar').checked){   const c = RATE.solar*RATE.solarQty;       base += c; rows.push(['Solar rinse · est. '+RATE.solarQty+' panels', c]); }
+    if($('ad-gutter').checked){  base += RATE.gutters; rows.push(['Gutter clear-out', RATE.gutters]); }
+
+    let minApplied = false;
+    if(base < RATE.minimum){ base = RATE.minimum; minApplied = true; }
+
+    const off = RATE.discount[freq] || 0;
+    let saved = 0;
+    if(off){ saved = base * off; base -= saved; }
+
+    return {n, ptype, store, sides, floors, freq, rows, base, saved, off, minApplied};
+  }
+
+  function render(){
+    const r = compute();
+    const lo = r.base * (1 - RATE.spread);
+    const hi = r.base * (1 + RATE.spread);
+
+    amt.innerHTML = money(lo) + ' <small>–</small> ' + money(hi) +
+      (r.freq !== 'once' ? ' <small>/ visit</small>' : '');
+
+    const where = r.store ? 'storefront' :
+      (r.sides==='both' ? 'inside & out' : 'exterior only') +
+      ', ' + r.floors + (r.floors>=3?'+':'') + ' stor' + (r.floors>1?'ies':'y');
+    amtNote.textContent = 'Based on ' + r.n + ' panes, ' + where +
+      (r.freq==='once' ? '.' : ', on a ' + ({semi:'twice-yearly',quarterly:'quarterly',monthly:'monthly'})[r.freq] + ' plan.');
+
+    let html = '';
+    r.rows.forEach(([label, cost])=>{
+      html += '<div class="line"><span>'+label+'</span><b>'+money(cost)+'</b></div>';
+    });
+    if(r.minApplied) html += '<div class="line"><span>Service minimum applied</span><b>'+money(RATE.minimum)+'</b></div>';
+    if(r.saved) html += '<div class="line save"><span>Plan discount · '+Math.round(r.off*100)+'% off</span><b>−'+money(r.saved)+'</b></div>';
+    lines.innerHTML = html;
+
+    paneOut.textContent = r.n;
+    const pct = ((r.n - panes.min) / (panes.max - panes.min)) * 100;
+    panes.style.setProperty('--pct', pct + '%');
+
+    const store = r.store;
+    storiesSet.hidden = store;
+    sidesSet.hidden   = store;
+  }
+
+  function summary(){
+    const r = compute();
+    const lo = money(r.base*(1-RATE.spread)), hi = money(r.base*(1+RATE.spread));
+    const g = id => ($(id).value || '—').trim();
+    const adds = [
+      $('ad-screens').checked && 'screens',
+      $('ad-tracks').checked  && 'tracks & sills',
+      $('ad-hard').checked    && 'hard-water removal',
+      $('ad-sky').checked     && 'skylights',
+      $('ad-solar').checked   && 'solar rinse',
+      $('ad-gutter').checked  && 'gutters'
+    ].filter(Boolean).join(', ') || 'none';
+
+    return [
+      'QUOTE REQUEST — ' + BIZ.name,
+      '',
+      'Name:      ' + g('f-name'),
+      'Phone:     ' + g('f-phone'),
+      'Email:     ' + g('f-email'),
+      'City:      ' + $('f-city').value,
+      'Timing:    ' + $('f-when').value,
+      '',
+      'Property:  ' + ({house:'House',condo:'Condo / apartment',store:'Storefront'})[r.ptype],
+      'Panes:     ' + r.n,
+      'Sides:     ' + (r.store ? 'storefront exterior' : (r.sides==='both'?'inside & out':'exterior only')),
+      'Stories:   ' + (r.store ? 'n/a' : r.floors),
+      'Add-ons:   ' + adds,
+      'Frequency: ' + ({once:'one time',semi:'twice a year',quarterly:'quarterly',monthly:'monthly'})[r.freq],
+      '',
+      'Estimate:  ' + lo + ' – ' + hi + (r.freq!=='once' ? ' per visit' : ''),
+      '',
+      'Notes: ' + (g('f-notes')==='—' ? '(none)' : g('f-notes'))
+    ].join('\n');
+  }
+
+  document.getElementById('quoteForm').addEventListener('input', render);
+  document.getElementById('quoteForm').addEventListener('change', render);
+  render();
+
+  const sent = $('sent');
+  function show(msg, withText){
+    sent.hidden = false;
+    sent.innerHTML = '<strong>'+msg+'</strong>' +
+      (withText ? '<div class="sent-pre">'+summary().replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))+'</div>' : '');
+  }
+
+  $('sendBtn').addEventListener('click', ()=>{
+    const body = encodeURIComponent(summary());
+    const subj = encodeURIComponent('Window washing quote — ' + ($('f-name').value || 'new request'));
+    window.location.href = 'mailto:' + BIZ.email + '?subject=' + subj + '&body=' + body;
+    show('Your email app should be opening now.', true);
+    sent.insertAdjacentHTML('beforeend',
+      '<p style="margin-top:10px">If it didn\'t, copy the details below and text them to <a href="tel:'+BIZ.tel+'"><strong>'+BIZ.phone+'</strong></a>.</p>');
+  });
+
+  $('copyBtn').addEventListener('click', async ()=>{
+    const text = summary();
+    let ok = false;
+    try{ await navigator.clipboard.writeText(text); ok = true; }catch(e){ ok = false; }
+    show(ok ? 'Copied. Text or email it over and we\'ll confirm the exact price.'
+            : 'Select the text below and copy it, then text it to ' + BIZ.phone + '.', true);
+  });
+})();
+
+/* ============================================================
+   6. ZIP CHECK
+   ============================================================ */
+(function zipcheck(){
+  const input = document.getElementById('zip');
+  const btn   = document.getElementById('zipBtn');
+  const out   = document.getElementById('zipres');
+  if(!btn) return;
+
+  function check(){
+    const z = (input.value||'').trim();
+    out.className = 'zipres';
+    if(!/^\d{5}$/.test(z)){ out.textContent = 'Enter a five-digit ZIP.'; return; }
+    if(ZIPS[z]){
+      out.classList.add('ok');
+      out.textContent = '✓ ' + ZIPS[z] + ' — yes, we\'re there weekly.';
+    }else{
+      out.classList.add('no');
+      out.textContent = 'Just outside the usual route — call and we\'ll see if it fits.';
+    }
+  }
+  btn.addEventListener('click', check);
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); check(); } });
+})();
+
+/* ---------- smooth in-page scrolling ---------- */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    const t = document.querySelector(a.getAttribute('href'));
+    if(!t) return;
+    e.preventDefault();
+    t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+  });
+});
+</script>
+
+</body>
+</html>
